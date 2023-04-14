@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+*:root {
+    --baseColor: #ff4876;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control:focus,
+[contenteditable].form-control:focus {
+    box-shadow: inset 0 -1px 0 transparent;
+}
+*::selection{
+    background: #D3E7FF;
+    color: #000;
+}
+.navbar {
+    height: 44px;
+    background: #323233;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.navbar a {
+    color: #ccc;
+    font-size: 14px;
+    transition: 0.7s ease;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+body {
+    background: #fff;
+}
+
+.mainPlaceHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    height: calc(100vh - 44px);
+}
+
+.mainPlaceHolder h1 {
+    font-size: 50px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.mainPlaceHolder .lead {
+    font-size: 20px;
+    color: #888;
+    pointer-events: none;
+    user-select: none;
+}
+
+.mainPlaceHolder img {
+    height: 40%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.ourActionbutton {
+    padding: 8px 23px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #323233d0;
+    color: #fff;
+    transition: 0.7s ease;
+}
+
+.controllers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.ourActionbutton:hover {
+    background-color: #323233;
+    color: white;
+}
+
+.outline-actionbtn {
+    background: none;
+    color: #323233;
+    border: 1px solid #323233;
+}
+
+/* Services section */
+.servicesOffers {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff;
+}
+
+.servicesOffers a {
+    text-decoration: none;
+}
+
+.servicesOffers hr {
+    width: 50%;
+    margin: 20px;
+    background: #ccc;
+    outline: none;
+    height: .1vh;
+    border: none;
+}
+
+.cardHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 12vw;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    height: 24vh;
+    color: #666;
+}
+
+.card:hover {
+    transition: 0.5s ease;
+    background: rgba(0, 0, 0, 0.035);
+}
+
+.card i {
+    font-size: 30px;
+}
+
+.card img {
+    height: 70%;
+    width: auto;
+}
+
+.card p {
+    height: auto;
+    width: auto;
+}
+
+/* salesStrip */
+#salesStrip {
+    height: auto;
+    background: #FBFBFD;
+    padding: 30px;
+}
+
+#salesStrip img {
+    border-radius: 4px;
+}
+
+#salesStrip a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 5px solid white;
+    height: max-content;
+    transition: 0.6s ease;
+}
+
+#salesStrip a:hover {
+    transition: 0.6s ease;
+    border-bottom: 5px solid rgb(201, 201, 201);
+}
+
+.trendings-heading {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardStrip {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    border-radius: 4px;
+    transition: 0.5s ease;
+    height: 90%;
+    color: #666;
+}
+
+.cardStrip img {
+    height: 80%;
+    width: auto;
+}
+
+
+.bindAsCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 55vh;
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    padding: 20px 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+    transition: 0.7s ease;
+}
+
+.bindAsCard:hover {
+    transition: 0.7s ease;
+}
+
+.bindAsCard img {
+    height: auto;
+    width: 100%;
+    transition: 0.7s ease;
+}
+
+.bindAsCard img:hover {
+    transform: translateY(-17px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.09);
+}
+
+.bindAsCard p.mainHeadings {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #3e3e3e;
+}
+
+.bindAsCard div.majorContents {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .7rem;
+    color: #3e3e3e;
+}
+
+p.savingAmount {
+    /* color: ; */
+    font-weight: 700;
+}
+
+.ourStyledbtn {
+    padding: 8px 23px;
+    border: 1px solid var(--baseColor);
+    outline: none;
+    color: var(--baseColor);
+    background: none;
+    text-decoration: none;
+}

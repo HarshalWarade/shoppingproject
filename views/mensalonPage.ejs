@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shopping Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="/css/mainHome.css">
+    <link rel="stylesheet" href="/css/mensalon.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href=""><i class="fa-regular fa-handshake"></i></a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">offices</a>
+        <a href="/SJhsjdh7e3r46ishdJHDjdh3493">Register</a>
+        <a href="/jfs845ahdsklLKJSHD364qjashdDZBNMbuywe9837498ljHNZDB">Login</a>
+        <a href=""><ion-icon name="search-outline"></ion-icon></i></a>
+        <a href=""><ion-icon name="bag-handle-outline"></ion-icon></a>
+    </div>
+    <div class="container my-4 mainHoldingUpper" data-aos="fade-left">
+        <div class="leftPanel">
+            <img src="https://images.firstpost.com/wp-content/uploads/2019/02/Vivo-V15-Pro3.jpg" alt="">
+        </div>
+        <div class="rightPanel" id="changerGIFS">
+            <img src="https://pngimg.com/d/iphone_12_PNG23.png"
+                alt="loading...">
+        </div>
+    </div>
+
+    <!-- <div id="mainPage" class="mainpage container my-4">
+        <div id="navbar">
+            <a href="">
+                <img src="https://media.istockphoto.com/id/640274128/photo/barber-using-scissors-and-comb.jpg?s=612x612&w=0&k=20&c=mjdP6NhDA40WBorr8kyyI69waMs1EyzLkSmT6lQRvGU="
+                    alt="">
+                <p>Haircut</p>
+            </a>
+            <a href="">
+                <img src="https://i.pinimg.com/736x/7c/c4/ae/7cc4ae4e7524e2eb84db4dd52fbae9e4--bright-colored-hair-mens-cuts.jpg"
+                    alt="">
+                <p>Hair Coloring</p>
+            </a>
+            <a href="">
+                <img src="https://i.ytimg.com/vi/lIyecpf0cMs/maxresdefault.jpg" alt="">
+                <p>Head Massage</p>
+            </a>
+            <a href="">
+                <img src="https://im.hunt.in/local/Gallery/2997339/l/2997339_334ef.jpg" alt="">
+                <p>De-Tan</p>
+            </a>
+            <a href="/createCustomePackageAllow" id="display">
+                <i class="fa-thin fa-plus"></i>
+                <p>Create your package</p>
+            </a>
+        </div>
+    </div> -->
+
+    <div class="container" style="padding: 40px;">
+        <h5>Vivo Collection</h5>
+        <hr>
+        <div class="flowless" style="display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem;">
+            <div class="card noted" style="width: 18rem; height: auto;">
+                <div class="card-body">
+                    <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1679308504923/70a9c5936a58b8ea03353ef0dab7d191.png"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Vivo Y100</b>
+                            <b>₹<%=menSalon.VivoY100%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('VivoY100'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=VivoY100"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=VivoY100"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+            <div class="card noted" style="width: 18rem; height: min-content;">
+                <div class="card-body">
+                    <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1672109987554/ff548482dab68707347f8861fa0bf387.png"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Vivo X90 Pro</b>
+                            <b>₹<%=menSalon.VivoX90Pro%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found1=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('VivoX90Pro'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=VivoX90Pro"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found1=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found1){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=VivoX90Pro"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+            <a href="/myCart" class="userCart">
+                <i class="fa-thin fa-cart-shopping-fast"></i>
+                <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger ourBgColor">
+                    <%=lengthofarray%>
+                        <span class="visually-hidden">unread messages</span>
+                </span>
+            </a>
+
+            <div class="card noted" style="width: 18rem; height: auto;">
+                <div class="card-body">
+                    <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1672109676009/036b01e1f094c85703f752f4ba2ff463.png"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Vivo X90</b>
+                            <b>₹<%=menSalon.VivoX90%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found2=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('VivoX90'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=VivoX90"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found2=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found2){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=VivoX90"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+            <div class="card noted" style="width: 18rem; height: auto;">
+                <div class="card-body">
+                    <img src="https://asia-exstatic-vivofs.vivo.com/PSee2l50xoirPK7y/1677055918133/aab61c8ff6549c0761fef2feaf3201d3.png"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Vivo V27 Pro</b>
+                            <b>₹<%=menSalon.VivoV27Pro%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found3=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('VivoV27Pro'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=VivoV27Pro"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found3=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found3){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=VivoV27Pro"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+            <div class="card noted" style="width: 18rem; height: auto;">
+                <div class="card-body">
+                    <img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1648633277806/342d4d9fe3df5d67519549c6856ef7a0.png"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Vivo Y21G</b>
+                            <b>₹<%=menSalon.VivoY21G%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found4=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('VivoY21G'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=VivoY21G"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found4=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found4){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=VivoY21G"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+            <div class="card noted" style="width: 18rem; height: auto;">
+                <div class="card-body">
+                    <img src="https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/1574392161443/17d6b6db01993328327d1737740dabc1.png"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Vivo U20</b>
+                            <b>₹<%=menSalon.VivoU20%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found5=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('VivoU20'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=VivoU20"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found5=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found5){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=VivoU20"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+
+
+            <div class="card noted" style="width: 18rem; height: auto;">
+                <div class="card-body">
+                    <img src="https://media.croma.com/image/upload/v1662655662/Croma%20Assets/Communication/Mobiles/Images/261979_oq7vjv.png"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Apple iPhone 14 Pro Max</b>
+                            <b>₹<%=menSalon.iPhone14ProMax%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found6=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('iPhone14ProMax'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=iPhone14ProMax"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found6=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found6){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=iPhone14ProMax"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+
+
+            <div class="card noted" style="width: 18rem; height: min-content;">
+                <div class="card-body">
+                    <img src="https://cdn.shopify.com/s/files/1/0568/5942/7015/products/MLPG3HN_A_1.png?v=1632371107"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Apple iPhone 13</b>
+                            <b>₹<%=menSalon.iPhone13%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found7=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('iPhone13'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=iPhone13"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found7=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found7){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=iPhone13"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+
+
+            <div class="card noted" style="width: 18rem; height: min-content;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/61RW5RGJeCL._SX679_.jpg"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Samsung Galaxy S23 5G</b>
+                            <b>₹<%=menSalon.SamsungGalaxy_S23_5G%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found8=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('SamsungGalaxy_S23_5G'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=SamsungGalaxy_S23_5G"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found8=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found8){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=SamsungGalaxy_S23_5G"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+
+
+            <div class="card noted" style="width: 18rem; height: min-content;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-a23-1.jpg"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Samsung Galaxy A23 5G</b>
+                            <b>₹<%=menSalon.Samsung_Galaxy_A23_5G%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found9=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('Samsung_Galaxy_A23_5G'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=Samsung_Galaxy_A23_5G"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found9=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found9){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=Samsung_Galaxy_A23_5G"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="card noted" style="width: 18rem; height: min-content;" data-aos="fade-up">
+                <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/81QVLzeVckL._SY741_.jpg"
+                        alt="loading..." style="height: auto; width: 100%;">
+                    <div class="presentThis">
+                        <p>
+                            <b>Samsung Galaxy S20 FE 5G</b>
+                            <b>₹<%=menSalon.Samsung_Galaxy_S20_FE_5G%></b>
+                        </p>
+                    </div>
+                    <p style="margin-bottom: 20px; font-size: 13px; text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In modi, error recusandae quisquam temporibus laboriosam placeat vitae beatae saepe deleniti.</p>
+                    <% let found10=false; %>
+                        <% for(let i=0; i<listofitems.length; i++){ %>
+                            <% if('Samsung_Galaxy_S20_FE_5G'==listofitems[i]){ %>
+                                <div class="d-grid gap-2 mx-auto">
+                                    <a href="/sa437HSDGw363whgGDS619D/?rem387DShsdg3568eHDG=Samsung_Galaxy_S20_FE_5G"
+                                        class="btn btn-primary myButtonSetService removefromcart" type="button"><i
+                                            class="fa-duotone fa-cart-xmark"></i> Remove</a>
+                                </div>
+                                <% found10=true; %>
+                                    <% break; %>
+                                        <% } %>
+                                            <% } %>
+                                                <% if(!found10){ %>
+                                                    <div class="d-grid gap-2 mx-auto">
+                                                        <a href="/hJjdQaBtcsroymammaL8/?v87sds87d87c=Samsung_Galaxy_S20_FE_5G"
+                                                            class="btn btn-primary myButtonSetService" type="button"><i
+                                                                class="fa-duotone fa-cart-shopping-fast"></i> Add </a>
+                                                    </div>
+                                                    <% } %>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <%=listofitems%>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+            </script>
+</body>
+
+</html>

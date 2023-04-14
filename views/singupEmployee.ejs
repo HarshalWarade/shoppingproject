@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register User</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="/css/mainHome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/registeremployee.css">
+</head>
+
+<body>
+    <h2 class="titleofpage" data-aos="fade-up">User Registration</h2>
+    <form action="/registerClient" method="post">
+        <div class="getthemproperly" data-aos="fade-down">
+            <div class="wrapeAroundhalf">
+                <span class="iconHolder"><i class="fa-duotone fa-user"></i></span>
+                <input type="text" placeholder="Enter first name here"
+                    title="Enter your first name here (Example: Harshal)" autocomplete="off" name="firstnameclient"
+                    required>
+            </div>
+            <div class="wrapeAroundhalf">
+                <span class="iconHolder"><i class="fa-duotone fa-user"></i></span>
+                <input type="text" title="Enter your last name here (Example: Warade)"
+                    placeholder="Enter last name here" name="lastnameclient" autocomplete="off" required>
+            </div>
+        </div>
+        <div class="wrapeAround">
+            <span class="iconHolder"><i class="fa-duotone fa-envelope"></i></span>
+            <input type="email" title="Enter your email here" placeholder="Enter your email here" autocomplete="off"
+                name="emailclient" required>
+        </div>
+        <div class="getthemproperly">
+            <div class="wrapeAroundhalf">
+                <span class="iconHolder"><i class="fa-duotone fa-lock"></i></i></span>
+                <input type="password"
+                    title="Create a password that you can remember, we advice to write it down somewhere"
+                    placeholder="Create a password" name="passwordclient" autocomplete="off" required>
+            </div>
+            <div class="wrapeAroundhalf">
+                <span class="iconHolder"><i class="fa-duotone fa-lock"></i></i></span>
+                <input type="password" title="This field should be same as the password's"
+                    placeholder="Confirm your password" autocomplete="off" name="confirmpasswordclient" required>
+            </div>
+        </div>
+        <!-- <div class="wrapeAround">
+            <select id="something" name="typeofWorkEmployee">
+                <option value="">Select type of service you can provide.</option>
+                <option value="Electrician Services">Electrician Services</option>
+                <option value="Plumber Services">Plumber Services</option>
+                <option value="Men Salon">Men Salon</option>
+                <option value="Women Salon">Women Salon</option>
+                <option value="Small Constructions">Small Constructions</option>
+                <option value="Car Washing">Car Washing</option>
+                <option value="Mechanic">Mechanic</option>
+                <option value="Kitchen Cleanup">Kitchen Cleanup</option>
+                <option value="House Cleaning">House Cleaning</option>
+                <option value="Gardening">Gardening</option>
+                <option value="Tempo Services">Tempo Services</option>
+                <option value="Tailor Service">Tailor Service</option>
+                <option value="Painter">Painter</option>
+                <option value="Interior Designings">Interior Designings</option>
+                <option value="Indoor Cleanings">Indoor Cleanings</option>
+                <option value="Outdoor Cleanings">Outdoor Cleanings</option>
+                <option value="Chef (Cook)">Chef (Cook)</option>
+                <option value="Clothes Washing">Clothes Washing</option>
+                <option value="Furnitures Setup">Furnitures Setup</option>
+                <option value="Laptop Repairing">Laptop Repairing</option>
+            </select>
+        </div> -->
+        <div class="wrapeAround">
+            <span class="iconHolder"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+            <input type="text" title="Enter your legal permanent address" placeholder="Enter your permanent address"
+                name="parmanentaddressclient" autocomplete="off" id="paddress" required>
+        </div>
+        <div class="wrapeAround extraReduction">
+            <span class="iconHolder"><i class="fa-duotone fa-location-dot"></i></span>
+            <input type="text" id="taddress"
+                title="Enter your additional address if any. If not, click the given button"
+                placeholder="Enter your another address (optional)" name="temporaryaddressclient" autocomplete="off">
+            <button id="sameasabove" class="genaddedbutton"
+                title="After clicking the permanent address will be copied here">Same as above</button>
+        </div>
+        <div class="wrapeAround">
+            <span class="iconHolder"><i class="fa-duotone fa-key"></i></span>
+            <input type="text" name="clientcompanyID" id="empKey"
+                placeholder="Click on the button to generate a Key for you">
+            <button class="genaddedbutton" id="generateKeyforEmployee">Generate</button>
+        </div>
+        <div class="getthemproperly">
+            <div class="wrapeAroundhalf">
+                <span class="iconHolder"><i class="fa-duotone fa-address-card"></i></span>
+                <input type="number" name="aadharcardclient" placeholder="Enter your aadhar card number here"
+                    autocomplete="off" required>
+            </div>
+            <div class="wrapeAroundhalf">
+                <span class="iconHolder"><i class="fa-duotone fa-phone"></i></span>
+                <input type="number" name="contactnumberclient" placeholder="Enter your phone number here"
+                    autocomplete="off" required>
+            </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 2rem;">
+            <button type="submit" class="btn btn-dark">Register</button>
+            <a href="/jfs845ahdsklLKJSHD364qjashdDZBNMbuywe9837498ljHNZDB" class="btn btn-danger">Log In</a>
+        </div>
+    </form>
+    <script>
+        let sameasabove = document.getElementById('sameasabove');
+        let paddress = document.getElementById('paddress');
+        let taddress = document.getElementById('taddress');
+        let generateKeyforEmployee = document.getElementById('generateKeyforEmployee');
+        let empKey = document.getElementById('empKey');
+        empKey.style.cursor = 'not-allowed';
+        sameasabove.addEventListener('click', (tevent) =>
+        {
+            tevent.preventDefault();
+            taddress.value = paddress.value;
+        })
+        generateKeyforEmployee.addEventListener('click', function (prevEvent)
+        {
+            prevEvent.preventDefault();
+            empKey.value = `${Math.floor(Math.random() * 10)}${Math.floor(Math.random() * 10)}${Math.floor(Math.random() * 10)}${Math.floor(Math.random() * 10)}${Math.floor(Math.random() * 10)}${Math.floor(Math.random() * 10)}`;
+        }, { once: true })
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
