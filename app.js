@@ -166,8 +166,11 @@ app.get('/myCart', authenticate, async function(req, res){
 
 app.get('/XhepltpojC5AyJcvtMmWh12Y7wse6uzTAOk/', authenticate, async function(req, res){
     const readlink = req.query.Gs2jHsTC2QRpt3ZedTtDC7mNIzDmuWuYa2w;
+    console.log(readlink);
     await Users.findOneAndUpdate({clientcompanyID: req.rootUser.clientcompanyID}, {checkoutamt: readlink});
     const appendAmt = req.rootUser.checkoutamt;
-    console.log(appendAmt)
-    return res.render('checkout', {appendAmt:appendAmt, firstname: req.rootUser.firstnameclient, lastname: req.rootUser.lastnameclient, clientID: req.rootUser.clientcompanyID});
+    console.log(appendAmt);
+    const lengthAdder = req.rootUser.serviceArray;
+    const o = lengthAdder.length;
+    return res.render('checkout', {appendAmt:appendAmt, firstname: req.rootUser.firstnameclient, emailLatch: req.rootUser.userEmail,lastname: req.rootUser.lastnameclient, clientID: req.rootUser.clientcompanyID, addressAppender: req.rootUser.parmanentaddressclient, lengthoflist: o, arrayitems: lengthAdder});
 });

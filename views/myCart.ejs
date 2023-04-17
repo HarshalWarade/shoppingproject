@@ -13,96 +13,116 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/mainHome.css">
     <style>
-        
-.myButtonSetService{
-    border: 1px solid var(--baseColor);
-    color: var(--baseColor);
-    background: none;
-    font-size: 15px;
-    outline: none;
-}
-.myButtonSetService i{
-    font-size: 18px;
-}
-.myButtonSetService:hover{
-    background: var(--baseColor);
-    border: 1px solid var(--baseColor);
-}
-.myButtonSetService:active{
-    background: var(--baseColor);
-    color: white;
-}
+        .myButtonSetService {
+            border: 1px solid var(--baseColor);
+            color: var(--baseColor);
+            background: none;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .myButtonSetService i {
+            font-size: 18px;
+        }
+
+        .myButtonSetService:hover {
+            background: var(--baseColor);
+            border: 1px solid var(--baseColor);
+        }
+
+        .myButtonSetService:active {
+            background: var(--baseColor);
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-    <%var amountholdings = Number("0")%>
-    <% if(arrayofitemsadded.length==0){ %>
-        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 97vh;">
-            <img src="https://bakestudio.in/assets/images/cart/empty-cart.gif" alt="empty-cart">
-            <br>
-            <br>
-            <h3>The cart is empty!</h3>
-        </div>
-    <% } else { %>
-
-            <h3 class="my-4" style="text-align: center;">Welcome to your cart</h3>
-            <h5 class="my-4" style="text-align: center;">Cart-<%=clientID%>
-            </h5>
-            <div class="container">
-            <hr>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Item Name</th>
-                    <th scope="col">Item quantity</th>
-                    <th scope="col">Cost with discount</th>
-                </tr>
-            </thead>
-            <tbody>
-                <% for(let i=0; i<arrayofitemsadded.length; i++){ %>
-                    <tr>
-                        <th scope="row"><%=i+1%></th>
-                        <td><%=arrayofitemsadded[i]%></td>
-                        <td>1</td>
-                        <% let gotem = arrayofitemsadded[i] %>
-                        <% let holder; let boundage = false;%>
-                        <% let gotclear = getlistofprices[i][0] %>
-                        <% for(let j = 0; j<getlistofprices.length; j++){ %>
-                            <% if(getlistofprices[j][0] == gotem){ %>
-                                <%let amountadder = JSON.parse(getlistofprices[j][1])%>
-                                <% amountholdings = amountholdings + amountadder %>
-                                <td>₹ <%=getlistofprices[j][1]%></td>
-                                <% boundage = true; %>
-                                <% break; %>
-                            <% } %>
-                        <%}%>
-                        <% if(!boundage){ %>
-                            <td>Please remove and add again...</td>
-                            <% break; %>
-                        <% } %>
-                    </tr>
-                <% } %>
-            </tbody>
-        </table>
-        <div class="my-4" style="display: flex; justify-content: flex-end; padding-right: 260px;">
-            <b>Sub Total: ₹ <%=amountholdings%></b>
-        </div>
-            </div>
-            </div>
-    <% } %>
-    <div class="container my-5">
-        <div class="d-grid mx-auto">
-            <a href="/XhepltpojC5AyJcvtMmWh12Y7wse6uzTAOk/?Gs2jHsTC2QRpt3ZedTtDC7mNIzDmuWuYa2w=<%=amountholdings%>"
-                class="btn btn-outline-primary myButtonSetService" type="button"><i
-                    class="fa-duotone fa-cart-shopping-fast"></i>Proceed to checkout
-            </a>
-        </div>
+    <div class="navbar">
+        <a href=""><i class="fa-regular fa-handshake"></i></a>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">offices</a>
+        <a href="/SJhsjdh7e3r46ishdJHDjdh3493">Register</a>
+        <a href="/jfs845ahdsklLKJSHD364qjashdDZBNMbuywe9837498ljHNZDB">LogOut</a>
+        <a href=""><ion-icon name="search-outline"></ion-icon></i></a>
+        <a href=""><ion-icon name="bag-handle-outline"></ion-icon></a>
     </div>
+    <%var amountholdings=Number("0")%>
+        <% if(arrayofitemsadded.length==0){ %>
+            <div
+                style="display: flex; justify-content: center; align-items: center; flex-direction: column; min-height: 97vh;">
+                <img src="https://bakestudio.in/assets/images/cart/empty-cart.gif" alt="empty-cart">
+                <br>
+                <br>
+                <h3>The cart is empty!</h3>
+            </div>
+            <% } else { %>
+
+                <h3 class="my-4" style="text-align: center;">Welcome to your cart</h3>
+                <h5 class="my-4" style="text-align: center;">Cart-<%=clientID%>
+                </h5>
+                <div class="container">
+                    <hr>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Item Name</th>
+                                <th scope="col">Item quantity</th>
+                                <th scope="col">Cost with discount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% for(let i=0; i<arrayofitemsadded.length; i++){ %>
+                                <tr>
+                                    <th scope="row">
+                                        <%=i+1%>
+                                    </th>
+                                    <td>
+                                        <%=arrayofitemsadded[i]%>
+                                    </td>
+                                    <td>1</td>
+                                    <% let gotem=arrayofitemsadded[i] %>
+                                        <% let holder; let boundage=false;%>
+                                            <% let gotclear=getlistofprices[i][0] %>
+                                                <% for(let j=0; j<getlistofprices.length; j++){ %>
+                                                    <% if(getlistofprices[j][0]==gotem){ %>
+                                                        <%let amountadder=JSON.parse(getlistofprices[j][1])%>
+                                                            <% amountholdings=amountholdings + amountadder %>
+                                                                <td>₹ <%=getlistofprices[j][1]%>
+                                                                </td>
+                                                                <% boundage=true; %>
+                                                                    <% break; %>
+                                                                        <% } %>
+                                                                            <%}%>
+                                                                                <% if(!boundage){ %>
+                                                                                    <td>Please remove and add again...
+                                                                                    </td>
+                                                                                    <% break; %>
+                                                                                        <% } %>
+                                </tr>
+                                <% } %>
+                        </tbody>
+                    </table>
+                    <div class="my-4" style="display: flex; justify-content: flex-end; padding-right: 260px;">
+                        <b>Sub Total: ₹ <%=amountholdings%></b>
+                    </div>
+                </div>
+                </div>
+                <% } %>
+                    <div class="container my-5">
+                        <div class="d-grid mx-auto">
+                            <a href="/XhepltpojC5AyJcvtMmWh12Y7wse6uzTAOk/?Gs2jHsTC2QRpt3ZedTtDC7mNIzDmuWuYa2w=<%=amountholdings%>"
+                                class="btn btn-outline-primary myButtonSetService" type="button"><i
+                                    class="fa-duotone fa-cart-shopping-fast"></i>Proceed to checkout
+                            </a>
+                        </div>
+                    </div>
 </body>
 
 </html>
