@@ -20,12 +20,12 @@ const authenticate = require('./middleware/authenticate');
 // Importing connection to the database;
 require('./connections/connect');
 var pricings = {
-    menSalon: {VivoY100: 24999, VivoX90Pro: 57190,VivoX90: 42390,VivoV27Pro: 37999,VivoY21G: 13499,VivoU20: 11999,iPhone14ProMax: 149900,iPhone13: 61999,SamsungGalaxy_S23_5G: 79999,Samsung_Galaxy_A23_5G: 22999,Samsung_Galaxy_S20_FE_5G: 37999,beardshapingandstylingonly: 149,haircutandbeardandfaceandneckdetanandmassage: 999,faceandneckdetan: 349,skingbrighteningfacialandinstantoilreduction: 1499,instanttanreduction: 129,refreshingfacemassage: 129,antipollutantcleanup: 649,oilreductioncleanup: 649,skinbrighteningfacial: 1349,hairstraighteningandheadmassage: 129,kidsheadmassage: 129,},
+    menSalon: {VivoY100: 24999, VivoX90Pro: 57190,VivoX90: 42390,VivoV27Pro: 37999,VivoY21G: 13499,VivoU20: 11999,iPhone14ProMax: 149900,iPhone13: 61999,SamsungGalaxy_S23_5G: 79999,Samsung_Galaxy_A23_5G: 22999,Samsung_Galaxy_S20_FE_5G: 37999,Xiomi_13_Pro: 79999,haircutandbeardandfaceandneckdetanandmassage: 999,faceandneckdetan: 349,skingbrighteningfacialandinstantoilreduction: 1499,instanttanreduction: 129,refreshingfacemassage: 129,antipollutantcleanup: 649,oilreductioncleanup: 649,skinbrighteningfacial: 1349,hairstraighteningandheadmassage: 129,kidsheadmassage: 129,},
     womenSalon: {},
 };
 var pricemodel = [
     ["VivoY100", 24999],["VivoX90Pro", 57190],["VivoX90", 42390],
-    ["VivoV27Pro",37999],["VivoY21G", 13499],["VivoU20", 11999],["iPhone14ProMax", 149900],["iPhone13",61999], ["SamsungGalaxy_S23_5G", 79999],["Samsung_Galaxy_A23_5G",22999], ["Samsung_Galaxy_S20_FE_5G",37999],["beardshapingandstylingonly", 149],
+    ["VivoV27Pro",37999],["VivoY21G", 13499],["VivoU20", 11999],["iPhone14ProMax", 149900],["iPhone13",61999], ["SamsungGalaxy_S23_5G", 79999],["Samsung_Galaxy_A23_5G",22999], ["Samsung_Galaxy_S20_FE_5G",37999],["Xiomi_13_Pro",79999],
     ["haircutandbeardandfaceandneckdetanandmassage", 999],["faceandneckdetan", 349],
     ["skingbrighteningfacialandinstantoilreduction", 1499], ["instanttanreduction", 129],
     ["refreshingfacemassage", 129],["antipollutantcleanup", 649],["oilreductioncleanup", 649],
